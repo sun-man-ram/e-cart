@@ -22,7 +22,7 @@ const userSchema=new mongoose.Schema(
    cartItems:[
     {
         quantity:{
-            typ:Number,
+            type:Number,
             default:1,
         },
         product:{
@@ -59,3 +59,7 @@ userSchema.pre("save",async function (next){
 userSchema.methods.comparePassword=async function(password){
     return bcrypt.compare(password,this.password);
 };
+
+const User=mongoose.model("User",userSchema);
+
+export default User;
