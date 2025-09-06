@@ -13,9 +13,6 @@ client.on("error", (err) => {
 
 await client.connect();
 
-await client.set("foo", "bar");
-console.log(await client.get("foo")); // test output
 
-await client.disconnect();
 
 export default client;
