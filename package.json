@@ -19,6 +19,7 @@
     "ioredis": "^5.7.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.18.0",
+    "redis": "^5.8.2",
     "stripe": "^18.5.0"
   },
   "devDependencies": {
